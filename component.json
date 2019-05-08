@@ -1,0 +1,76 @@
+{
+    "title": "api.text2data.org",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/text2data.org/v3.1/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "http://api.text2data.org/",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "Root_Get": {
+            "main": "./lib/actions/Root_Get.js",
+            "title": "Root_Get",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Root_Get.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Root_Post": {
+            "main": "./lib/actions/Root_Post.js",
+            "title": "Root_Post",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                },
+                "body_content_type": {
+                    "viewClass": "SelectView",
+                    "label": "Body Content-Type",
+                    "required": true,
+                    "prompt": "Choose a body Content-Type.",
+                    "model": {
+                        "application/json": "application/json",
+                        "text/json": "text/json",
+                        "application/x-www-form-urlencoded": "application/x-www-form-urlencoded"
+                    }
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Root_Post.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

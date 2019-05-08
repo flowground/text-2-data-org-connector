@@ -1,0 +1,1888 @@
+{
+    "openapi": "3.0.0",
+    "servers": [
+        {
+            "url": "http://api.text2data.org/"
+        }
+    ],
+    "info": {
+        "contact": {
+            "x-twitter": "Text2Data"
+        },
+        "title": "api.text2data.org",
+        "version": "v3.1",
+        "x-apisguru-categories": [
+            "text"
+        ],
+        "x-logo": {
+            "url": "https://api.apis.guru/v2/cache/logo/https_twitter.com_Text2Data_profile_image.png"
+        },
+        "x-origin": [
+            {
+                "format": "swagger",
+                "url": "http://api.text2data.org/swagger/docs/v3.1",
+                "version": "2.0"
+            }
+        ],
+        "x-preferred": true,
+        "x-providerName": "text2data.org"
+    },
+    "paths": {
+        "/api/Root": {
+            "get": {
+                "operationId": "Root_Get",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "AutoCategories": {
+                                            "items": {
+                                                "properties": {
+                                                    "CategoryName": {
+                                                        "type": "string"
+                                                    },
+                                                    "Score": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "Citations": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "CloudTagHTML": {
+                                            "type": "string"
+                                        },
+                                        "CoreSentences": {
+                                            "items": {
+                                                "properties": {
+                                                    "Relevance": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentenceNumber": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResultString": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "DetectedLanguage": {
+                                            "type": "string"
+                                        },
+                                        "DocSentimentPolarity": {
+                                            "type": "string"
+                                        },
+                                        "DocSentimentResultString": {
+                                            "type": "string"
+                                        },
+                                        "DocSentimentValue": {
+                                            "format": "double",
+                                            "type": "number"
+                                        },
+                                        "Entities": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "ErrorMessage": {
+                                            "type": "string"
+                                        },
+                                        "Keywords": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "NegativePhraseCount": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "NeutralPhraseCount": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "PartsOfSpeech": {
+                                            "items": {
+                                                "properties": {
+                                                    "Action": {
+                                                        "type": "string"
+                                                    },
+                                                    "Object": {
+                                                        "type": "string"
+                                                    },
+                                                    "ObjectSentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "ObjectSentimentResultString": {
+                                                        "type": "string"
+                                                    },
+                                                    "ObjectSentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Subject": {
+                                                        "type": "string"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "PositivePhraseCount": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "ResultTextHtml": {
+                                            "type": "string"
+                                        },
+                                        "SlangWords": {
+                                            "items": {
+                                                "properties": {
+                                                    "SlangWordText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SlangWordTranslation": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "Status": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "Subjectivity": {
+                                            "type": "string"
+                                        },
+                                        "Summarization": {
+                                            "type": "string"
+                                        },
+                                        "SwearWords": {
+                                            "items": {
+                                                "properties": {
+                                                    "SlangWordText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SlangWordTranslation": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "Themes": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "TransactionCurrentDay": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "TransactionDailyLimit": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "TransactionTotalCreditsLeft": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "TransactionUseByDate": {
+                                            "format": "date-time",
+                                            "type": "string"
+                                        },
+                                        "UserCategories": {
+                                            "items": {
+                                                "properties": {
+                                                    "CategoryName": {
+                                                        "type": "string"
+                                                    },
+                                                    "Score": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            },
+                            "text/json": {
+                                "schema": {
+                                    "properties": {
+                                        "AutoCategories": {
+                                            "items": {
+                                                "properties": {
+                                                    "CategoryName": {
+                                                        "type": "string"
+                                                    },
+                                                    "Score": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "Citations": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "CloudTagHTML": {
+                                            "type": "string"
+                                        },
+                                        "CoreSentences": {
+                                            "items": {
+                                                "properties": {
+                                                    "Relevance": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentenceNumber": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResultString": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "DetectedLanguage": {
+                                            "type": "string"
+                                        },
+                                        "DocSentimentPolarity": {
+                                            "type": "string"
+                                        },
+                                        "DocSentimentResultString": {
+                                            "type": "string"
+                                        },
+                                        "DocSentimentValue": {
+                                            "format": "double",
+                                            "type": "number"
+                                        },
+                                        "Entities": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "ErrorMessage": {
+                                            "type": "string"
+                                        },
+                                        "Keywords": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "NegativePhraseCount": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "NeutralPhraseCount": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "PartsOfSpeech": {
+                                            "items": {
+                                                "properties": {
+                                                    "Action": {
+                                                        "type": "string"
+                                                    },
+                                                    "Object": {
+                                                        "type": "string"
+                                                    },
+                                                    "ObjectSentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "ObjectSentimentResultString": {
+                                                        "type": "string"
+                                                    },
+                                                    "ObjectSentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Subject": {
+                                                        "type": "string"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "PositivePhraseCount": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "ResultTextHtml": {
+                                            "type": "string"
+                                        },
+                                        "SlangWords": {
+                                            "items": {
+                                                "properties": {
+                                                    "SlangWordText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SlangWordTranslation": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "Status": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "Subjectivity": {
+                                            "type": "string"
+                                        },
+                                        "Summarization": {
+                                            "type": "string"
+                                        },
+                                        "SwearWords": {
+                                            "items": {
+                                                "properties": {
+                                                    "SlangWordText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SlangWordTranslation": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "Themes": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "TransactionCurrentDay": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "TransactionDailyLimit": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "TransactionTotalCreditsLeft": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "TransactionUseByDate": {
+                                            "format": "date-time",
+                                            "type": "string"
+                                        },
+                                        "UserCategories": {
+                                            "items": {
+                                                "properties": {
+                                                    "CategoryName": {
+                                                        "type": "string"
+                                                    },
+                                                    "Score": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Root"
+                ]
+            },
+            "post": {
+                "operationId": "Root_Post",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "AutoCategories": {
+                                            "items": {
+                                                "properties": {
+                                                    "CategoryName": {
+                                                        "type": "string"
+                                                    },
+                                                    "Score": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "Citations": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "CloudTagHTML": {
+                                            "type": "string"
+                                        },
+                                        "CoreSentences": {
+                                            "items": {
+                                                "properties": {
+                                                    "Relevance": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentenceNumber": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResultString": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "DetectedLanguage": {
+                                            "type": "string"
+                                        },
+                                        "DocSentimentPolarity": {
+                                            "type": "string"
+                                        },
+                                        "DocSentimentResultString": {
+                                            "type": "string"
+                                        },
+                                        "DocSentimentValue": {
+                                            "format": "double",
+                                            "type": "number"
+                                        },
+                                        "Entities": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "ErrorMessage": {
+                                            "type": "string"
+                                        },
+                                        "Keywords": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "NegativePhraseCount": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "NeutralPhraseCount": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "PartsOfSpeech": {
+                                            "items": {
+                                                "properties": {
+                                                    "Action": {
+                                                        "type": "string"
+                                                    },
+                                                    "Object": {
+                                                        "type": "string"
+                                                    },
+                                                    "ObjectSentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "ObjectSentimentResultString": {
+                                                        "type": "string"
+                                                    },
+                                                    "ObjectSentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Subject": {
+                                                        "type": "string"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "PositivePhraseCount": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "ResultTextHtml": {
+                                            "type": "string"
+                                        },
+                                        "SlangWords": {
+                                            "items": {
+                                                "properties": {
+                                                    "SlangWordText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SlangWordTranslation": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "Status": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "Subjectivity": {
+                                            "type": "string"
+                                        },
+                                        "Summarization": {
+                                            "type": "string"
+                                        },
+                                        "SwearWords": {
+                                            "items": {
+                                                "properties": {
+                                                    "SlangWordText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SlangWordTranslation": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "Themes": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "TransactionCurrentDay": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "TransactionDailyLimit": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "TransactionTotalCreditsLeft": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "TransactionUseByDate": {
+                                            "format": "date-time",
+                                            "type": "string"
+                                        },
+                                        "UserCategories": {
+                                            "items": {
+                                                "properties": {
+                                                    "CategoryName": {
+                                                        "type": "string"
+                                                    },
+                                                    "Score": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            },
+                            "text/json": {
+                                "schema": {
+                                    "properties": {
+                                        "AutoCategories": {
+                                            "items": {
+                                                "properties": {
+                                                    "CategoryName": {
+                                                        "type": "string"
+                                                    },
+                                                    "Score": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "Citations": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "CloudTagHTML": {
+                                            "type": "string"
+                                        },
+                                        "CoreSentences": {
+                                            "items": {
+                                                "properties": {
+                                                    "Relevance": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentenceNumber": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResultString": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "DetectedLanguage": {
+                                            "type": "string"
+                                        },
+                                        "DocSentimentPolarity": {
+                                            "type": "string"
+                                        },
+                                        "DocSentimentResultString": {
+                                            "type": "string"
+                                        },
+                                        "DocSentimentValue": {
+                                            "format": "double",
+                                            "type": "number"
+                                        },
+                                        "Entities": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "ErrorMessage": {
+                                            "type": "string"
+                                        },
+                                        "Keywords": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "NegativePhraseCount": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "NeutralPhraseCount": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "PartsOfSpeech": {
+                                            "items": {
+                                                "properties": {
+                                                    "Action": {
+                                                        "type": "string"
+                                                    },
+                                                    "Object": {
+                                                        "type": "string"
+                                                    },
+                                                    "ObjectSentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "ObjectSentimentResultString": {
+                                                        "type": "string"
+                                                    },
+                                                    "ObjectSentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Subject": {
+                                                        "type": "string"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "PositivePhraseCount": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "ResultTextHtml": {
+                                            "type": "string"
+                                        },
+                                        "SlangWords": {
+                                            "items": {
+                                                "properties": {
+                                                    "SlangWordText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SlangWordTranslation": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "Status": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "Subjectivity": {
+                                            "type": "string"
+                                        },
+                                        "Summarization": {
+                                            "type": "string"
+                                        },
+                                        "SwearWords": {
+                                            "items": {
+                                                "properties": {
+                                                    "SlangWordText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SlangWordTranslation": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "Themes": {
+                                            "items": {
+                                                "properties": {
+                                                    "KeywordType": {
+                                                        "type": "string"
+                                                    },
+                                                    "Mentions": {
+                                                        "format": "int32",
+                                                        "type": "integer"
+                                                    },
+                                                    "SentencePartType": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentenceText": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentPolarity": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentResult": {
+                                                        "type": "string"
+                                                    },
+                                                    "SentimentValue": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    },
+                                                    "Text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "TransactionCurrentDay": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "TransactionDailyLimit": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "TransactionTotalCreditsLeft": {
+                                            "format": "int32",
+                                            "type": "integer"
+                                        },
+                                        "TransactionUseByDate": {
+                                            "format": "date-time",
+                                            "type": "string"
+                                        },
+                                        "UserCategories": {
+                                            "items": {
+                                                "properties": {
+                                                    "CategoryName": {
+                                                        "type": "string"
+                                                    },
+                                                    "Score": {
+                                                        "format": "double",
+                                                        "type": "number"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Root"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "DocumentLanguage": {
+                                        "type": "string"
+                                    },
+                                    "DocumentText": {
+                                        "type": "string"
+                                    },
+                                    "IsTwitterContent": {
+                                        "type": "boolean"
+                                    },
+                                    "PrivateKey": {
+                                        "type": "string"
+                                    },
+                                    "Secret": {
+                                        "type": "string"
+                                    },
+                                    "SerializeFormat": {
+                                        "format": "int32",
+                                        "type": "integer"
+                                    },
+                                    "UserCategoryModelName": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        },
+                        "text/json": {
+                            "schema": {
+                                "properties": {
+                                    "DocumentLanguage": {
+                                        "type": "string"
+                                    },
+                                    "DocumentText": {
+                                        "type": "string"
+                                    },
+                                    "IsTwitterContent": {
+                                        "type": "boolean"
+                                    },
+                                    "PrivateKey": {
+                                        "type": "string"
+                                    },
+                                    "Secret": {
+                                        "type": "string"
+                                    },
+                                    "SerializeFormat": {
+                                        "format": "int32",
+                                        "type": "integer"
+                                    },
+                                    "UserCategoryModelName": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        },
+                        "application/x-www-form-urlencoded": {
+                            "schema": {
+                                "properties": {
+                                    "DocumentLanguage": {
+                                        "type": "string"
+                                    },
+                                    "DocumentText": {
+                                        "type": "string"
+                                    },
+                                    "IsTwitterContent": {
+                                        "type": "boolean"
+                                    },
+                                    "PrivateKey": {
+                                        "type": "string"
+                                    },
+                                    "Secret": {
+                                        "type": "string"
+                                    },
+                                    "SerializeFormat": {
+                                        "format": "int32",
+                                        "type": "integer"
+                                    },
+                                    "UserCategoryModelName": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    },
+                    "required": true
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Category": {
+                "properties": {
+                    "CategoryName": {
+                        "type": "string"
+                    },
+                    "Score": {
+                        "format": "double",
+                        "type": "number"
+                    }
+                },
+                "type": "object"
+            },
+            "Document": {
+                "properties": {
+                    "DocumentLanguage": {
+                        "type": "string"
+                    },
+                    "DocumentText": {
+                        "type": "string"
+                    },
+                    "IsTwitterContent": {
+                        "type": "boolean"
+                    },
+                    "PrivateKey": {
+                        "type": "string"
+                    },
+                    "Secret": {
+                        "type": "string"
+                    },
+                    "SerializeFormat": {
+                        "format": "int32",
+                        "type": "integer"
+                    },
+                    "UserCategoryModelName": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "DocumentResult": {
+                "properties": {
+                    "AutoCategories": {
+                        "items": {
+                            "properties": {
+                                "CategoryName": {
+                                    "type": "string"
+                                },
+                                "Score": {
+                                    "format": "double",
+                                    "type": "number"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "Citations": {
+                        "items": {
+                            "properties": {
+                                "KeywordType": {
+                                    "type": "string"
+                                },
+                                "Mentions": {
+                                    "format": "int32",
+                                    "type": "integer"
+                                },
+                                "SentencePartType": {
+                                    "type": "string"
+                                },
+                                "SentenceText": {
+                                    "type": "string"
+                                },
+                                "SentimentPolarity": {
+                                    "type": "string"
+                                },
+                                "SentimentResult": {
+                                    "type": "string"
+                                },
+                                "SentimentValue": {
+                                    "format": "double",
+                                    "type": "number"
+                                },
+                                "Text": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "CloudTagHTML": {
+                        "type": "string"
+                    },
+                    "CoreSentences": {
+                        "items": {
+                            "properties": {
+                                "Relevance": {
+                                    "format": "int32",
+                                    "type": "integer"
+                                },
+                                "SentenceNumber": {
+                                    "format": "int32",
+                                    "type": "integer"
+                                },
+                                "SentimentPolarity": {
+                                    "type": "string"
+                                },
+                                "SentimentResultString": {
+                                    "type": "string"
+                                },
+                                "SentimentValue": {
+                                    "format": "double",
+                                    "type": "number"
+                                },
+                                "Text": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "DetectedLanguage": {
+                        "type": "string"
+                    },
+                    "DocSentimentPolarity": {
+                        "type": "string"
+                    },
+                    "DocSentimentResultString": {
+                        "type": "string"
+                    },
+                    "DocSentimentValue": {
+                        "format": "double",
+                        "type": "number"
+                    },
+                    "Entities": {
+                        "items": {
+                            "properties": {
+                                "KeywordType": {
+                                    "type": "string"
+                                },
+                                "Mentions": {
+                                    "format": "int32",
+                                    "type": "integer"
+                                },
+                                "SentencePartType": {
+                                    "type": "string"
+                                },
+                                "SentenceText": {
+                                    "type": "string"
+                                },
+                                "SentimentPolarity": {
+                                    "type": "string"
+                                },
+                                "SentimentResult": {
+                                    "type": "string"
+                                },
+                                "SentimentValue": {
+                                    "format": "double",
+                                    "type": "number"
+                                },
+                                "Text": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "ErrorMessage": {
+                        "type": "string"
+                    },
+                    "Keywords": {
+                        "items": {
+                            "properties": {
+                                "KeywordType": {
+                                    "type": "string"
+                                },
+                                "Mentions": {
+                                    "format": "int32",
+                                    "type": "integer"
+                                },
+                                "SentencePartType": {
+                                    "type": "string"
+                                },
+                                "SentenceText": {
+                                    "type": "string"
+                                },
+                                "SentimentPolarity": {
+                                    "type": "string"
+                                },
+                                "SentimentResult": {
+                                    "type": "string"
+                                },
+                                "SentimentValue": {
+                                    "format": "double",
+                                    "type": "number"
+                                },
+                                "Text": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "NegativePhraseCount": {
+                        "format": "int32",
+                        "type": "integer"
+                    },
+                    "NeutralPhraseCount": {
+                        "format": "int32",
+                        "type": "integer"
+                    },
+                    "PartsOfSpeech": {
+                        "items": {
+                            "properties": {
+                                "Action": {
+                                    "type": "string"
+                                },
+                                "Object": {
+                                    "type": "string"
+                                },
+                                "ObjectSentimentPolarity": {
+                                    "type": "string"
+                                },
+                                "ObjectSentimentResultString": {
+                                    "type": "string"
+                                },
+                                "ObjectSentimentValue": {
+                                    "format": "double",
+                                    "type": "number"
+                                },
+                                "Subject": {
+                                    "type": "string"
+                                },
+                                "Text": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "PositivePhraseCount": {
+                        "format": "int32",
+                        "type": "integer"
+                    },
+                    "ResultTextHtml": {
+                        "type": "string"
+                    },
+                    "SlangWords": {
+                        "items": {
+                            "properties": {
+                                "SlangWordText": {
+                                    "type": "string"
+                                },
+                                "SlangWordTranslation": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "Status": {
+                        "format": "int32",
+                        "type": "integer"
+                    },
+                    "Subjectivity": {
+                        "type": "string"
+                    },
+                    "Summarization": {
+                        "type": "string"
+                    },
+                    "SwearWords": {
+                        "items": {
+                            "properties": {
+                                "SlangWordText": {
+                                    "type": "string"
+                                },
+                                "SlangWordTranslation": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "Themes": {
+                        "items": {
+                            "properties": {
+                                "KeywordType": {
+                                    "type": "string"
+                                },
+                                "Mentions": {
+                                    "format": "int32",
+                                    "type": "integer"
+                                },
+                                "SentencePartType": {
+                                    "type": "string"
+                                },
+                                "SentenceText": {
+                                    "type": "string"
+                                },
+                                "SentimentPolarity": {
+                                    "type": "string"
+                                },
+                                "SentimentResult": {
+                                    "type": "string"
+                                },
+                                "SentimentValue": {
+                                    "format": "double",
+                                    "type": "number"
+                                },
+                                "Text": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "TransactionCurrentDay": {
+                        "format": "int32",
+                        "type": "integer"
+                    },
+                    "TransactionDailyLimit": {
+                        "format": "int32",
+                        "type": "integer"
+                    },
+                    "TransactionTotalCreditsLeft": {
+                        "format": "int32",
+                        "type": "integer"
+                    },
+                    "TransactionUseByDate": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "UserCategories": {
+                        "items": {
+                            "properties": {
+                                "CategoryName": {
+                                    "type": "string"
+                                },
+                                "Score": {
+                                    "format": "double",
+                                    "type": "number"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    }
+                },
+                "type": "object"
+            },
+            "PartOfSpeech": {
+                "properties": {
+                    "Action": {
+                        "type": "string"
+                    },
+                    "Object": {
+                        "type": "string"
+                    },
+                    "ObjectSentimentPolarity": {
+                        "type": "string"
+                    },
+                    "ObjectSentimentResultString": {
+                        "type": "string"
+                    },
+                    "ObjectSentimentValue": {
+                        "format": "double",
+                        "type": "number"
+                    },
+                    "Subject": {
+                        "type": "string"
+                    },
+                    "Text": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "Sentence": {
+                "properties": {
+                    "Relevance": {
+                        "format": "int32",
+                        "type": "integer"
+                    },
+                    "SentenceNumber": {
+                        "format": "int32",
+                        "type": "integer"
+                    },
+                    "SentimentPolarity": {
+                        "type": "string"
+                    },
+                    "SentimentResultString": {
+                        "type": "string"
+                    },
+                    "SentimentValue": {
+                        "format": "double",
+                        "type": "number"
+                    },
+                    "Text": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "SentencePart": {
+                "properties": {
+                    "KeywordType": {
+                        "type": "string"
+                    },
+                    "Mentions": {
+                        "format": "int32",
+                        "type": "integer"
+                    },
+                    "SentencePartType": {
+                        "type": "string"
+                    },
+                    "SentenceText": {
+                        "type": "string"
+                    },
+                    "SentimentPolarity": {
+                        "type": "string"
+                    },
+                    "SentimentResult": {
+                        "type": "string"
+                    },
+                    "SentimentValue": {
+                        "format": "double",
+                        "type": "number"
+                    },
+                    "Text": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "SlangWord": {
+                "properties": {
+                    "SlangWordText": {
+                        "type": "string"
+                    },
+                    "SlangWordTranslation": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    }
+}
